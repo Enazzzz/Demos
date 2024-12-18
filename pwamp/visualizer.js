@@ -94,10 +94,6 @@ export class Visualizer {
     let lastY = 0;
     let lastX = 0;
 
-    for (let i = 0; i < length; i += 2) {
-      // Mirror image.
-      const index = i < length / 2 ? i : length - 1 - i;
-
       const x = (i / length - .5) * W;
       const y = (1 - dataArray[index] / 256) * H;
       const cX = (lastX + x) / 2;
